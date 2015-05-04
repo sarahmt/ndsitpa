@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/foundation.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+
+  <script src="{{ url_for('static', filename='js/vendor/modernizr.js') }}"></script>
+
+  <!-- slick carousel stuff -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick/slick.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/slick/slick-theme.css') }}">
+</head>
+<body>
+
+    {# fancy font from google fonts #}
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+    {# touch menu icon #}
+    <strong class="show-for-small">
+        <!--<div class="menu">
+            <ul>
+              <li>
+                <img src="{{ url_for('static', filename='img/menu-icon.png', _external=True) }}" height="15" width="30" style="PADDING-TOP:3px"/>
+                <ul>
+                  <a href="/about"><li>About</li></a>
+                  <a href="/service"><li>E-Concierge</li></a>
+                  <a href="/news"><li>Restaurants</li></a>
+                  <a href="/community"><li>Community</li></a>
+                  <a href="/contact"><li>Membership</li></a>
+                  <a href="/contact"><li>App Download</li></a>
+                </ul>
+              </li>
+            </ul>
+        </div>-->
+
+        <nav id="menu-primary">
+            <div class="menu-container">
+                <div id="menu-toggle-primary">
+                    <a class="open-menu-primary" href="#menu-primary"><span><img src="{{ url_for('static', filename='img/menu-icon.png', _external=True) }}" height="13" width="26" style="PADDING-TOP:3.5px"/></span></a>
+                    <a class="close-menu-primary" href="#"><span><img src="{{ url_for('static', filename='img/close-icon.png', _external=True) }}" height="13" width="26" style="PADDING-TOP:3.5px"/></span></a>
+                </div><!-- .menu-toggle -->
+                <div class="wrap">
+                    <ul class="menu-items" id="menu-primary-items">
+                        <a href="/about"><li>About</li></a>
+                          <a href="/service"><li>E-Concierge</li></a>
+                          <a href="/news"><li>Restaurants</li></a>
+                          <a href="/community"><li>Community</li></a>
+                          <a href="/contact"><li>Membership</li></a>
+                    </ul>
+                </div><!-- .wrap -->
+            </div><!-- .menu-container -->
+        </nav>
+
+    </strong>
+
+    {# fixed top bar #}
+
+    <div class = "fixed">
+    <div class="row">
+      <div class="barbox">
+      <nav class="top-bar" data-topbar>
+        <!--<strong class="hide-for-touch">-->
+        <strong class="hide-for-small">
+        <ul class="title-area">
+          <li class="name">
+            {# logo with link to home #}
+          <a href="/">
+            <div class = "logo">
+              <img src="{{ url_for('static', filename='img/logo.png', _external=True) }}" height="35" width="70" style="PADDING-RIGHT: 1rem" style="PADDING-TOP: 3em" class="clearfix"/>
+            </div>
+          </a>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+
+
+      <section class="top-bar-section">
+        <ul class="left">
+          <li><a class="active" href="/about">About</a></li>
+          <li><a class="active" href="/service">E-Concierge</a></li>
+          <li><a class="active" href="/community">Community</a></li>
+          <li><a class="active" href="/news">Our Restaurants</a></li>
+        </ul>
+        <!--
+        <ul class="right">
+          <li><div class="button"> sign in </div></li>
+          <li>_</li>
+          <li><div class="button"> sign up </div></li>
+        </ul>
+        -->
+     </section>
+      </strong>
+      <!--</strong>-->
+      </nav>
+    </div>
+    </div>
+    </div>
+
+
+    {# touch top bar #}
+
+   <strong class="show-for-small">
+    <div class = "fixed">
+    <div class="row">
+      <div class="barbox">
+      <nav class="top-bar" data-topbar role="navigation" >
+        <ul class="title-area">
+          <li class="name">
+            {# logo with link to home #}
+           <a href="/">
+            <div class = "touchlogo">
+              <img src="{{ url_for('static', filename='img/logo.png', _external=True) }}" height="30" width="60" align="left" class="clearfix"/>
+            </div>
+          </a>
+        </li>
+
+        </ul>
+
+        </nav>
+        </div>
+        </div>
+        </div>
+        </strong>
+
+
+
+  <!-- body content here -->
+  {% block body%}{% endblock %}
+
+
+  {# footer #}
+    <strong class="hide-for-small">
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr/>
+          <div class="row collapse">
+            <div class="large-10 columns"><span class="copyright">(C) 2015 Point Taken LLC. All rights reserved.</span><a href="/privacypolicy"><span class="privacy">Privacy Policy</span></a></div>
+            <div class="large-2 columns">
+              <ul class="inline-list right">
+                <li><a class="active" href="mailto:contact@neurodining.com" target="blank"><img src="{{ url_for('static', filename='img/mail.png', _external=True) }}" style="width: 30px; height: 30px"/> </a></li>
+                <li><a class="active" href="http://www.facebook.com/neurodining/" target="blank"><img src="{{ url_for('static', filename='img/fs.png', _external=True) }}" style="width: 30px; height: 30px"/> </a></li>
+                <li><a class="active" href="http://www.instagram.com/neurodining/" target="blank"><img src="{{ url_for('static', filename='img/igs.png', _external=True) }}" style="width: 30px; height: 30px"/> </a></li>
+                <li><a class="active" href="https://plus.google.com/103936074861553406382" target="blank" rel="publisher"><img src="{{ url_for('static', filename='img/gp.png', _external=True) }}" style="width: 30px; height: 30px"/> </a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </footer>
+    </strong>
+
+    <strong class="show-for-small">
+    <div class="large-12 medium-12 small-12 columns nopadding">
+    <hr/>
+    <div class="touchfooter">
+        <div align="right">
+        <ul>
+                <li><a class="active" href="mailto:contact@neurodining.com" target="blank"><img src="{{ url_for('static', filename='img/mail.png', _external=True) }}" style="width: 27px; height: 27px"/> </a></li>
+                <li><a class="active" href="http://www.facebook.com/neurodining/" target="blank"><img src="{{ url_for('static', filename='img/fs.png', _external=True) }}" style="width: 30px; height: 30px"/> </a></li>
+                <li><a class="active" href="http://www.instagram.com/neurodining/" target="blank"><img src="{{ url_for('static', filename='img/igs.png', _external=True) }}" style="width: 30px; height: 30px"/> </a></li>
+                <li><a class="active" href="https://plus.google.com/103936074861553406382" target="blank" rel="publisher"><img src="{{ url_for('static', filename='img/gp.png', _external=True) }}" style="width: 30px; height: 30px"/> </a></li>
+              </ul>
+        </div>
+        <div align="center">
+        <span class="copyright">(C) 2015 Point Taken LLC. All rights reserved.</span><a href="/privacypolicy"><br><span class="privacy">Privacy Policy</span></a>
+        </div>
+    </div>
+    </div>
+    </strong>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/foundation/foundation.topbar.js"></script>
+
+
+
+  <script src="{{ url_for('static', filename='js/vendor/jquery.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/vendor/fastclick.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/vendor/modernizr.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation/foundation.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation/foundation.orbit.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation/foundation.topbar.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation/foundation.dropdown.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation/foundation.reveal.js') }}"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+  <script src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/foundation/foundation.tooltip.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/slick/slick.min.js') }}"></script>
+<script>
+    $(document).foundation();
+
+// SLick Slider Code
+ var $windowWidth=$(window).width();
+
+$( window ).resize(function() {
+var $windowWidth=$(window).width();
+if(($windowWidth > 1) && ($windowWidth < 640)){
+$('.slick-multislider').unslick();
+      $('.slick-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+
+    } else {
+$('.slick-multislider').unslick();
+        $('.slick-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+    }
+
+});
+
+if(($windowWidth > 1) && ($windowWidth < 640)){
+
+      $('.slick-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+
+    } else {
+        $('.slick-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+    }
+
+
+</script>
+
+<script>
+    $(document).foundation();
+
+// SLick Slider2 Code
+ var $windowWidth=$(window).width();
+
+$( window ).resize(function() {
+var $windowWidth=$(window).width();
+if(($windowWidth > 1) && ($windowWidth < 640)){
+$('.slick2-multislider').unslick();
+      $('.slick2-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+
+    } else {
+$('.slick2-multislider').unslick();
+        $('.slick2-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+    }
+
+});
+
+if(($windowWidth > 1) && ($windowWidth < 640)){
+
+      $('.slick2-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+
+    } else {
+        $('.slick2-multislider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+    }
+
+
+</script>
+
+<!-- For Dropdown -->
+<!--<script>
+$(document).ready(function() {
+    $('.hover').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});
+</script>-->
+
+  <!--<script>
+
+  var container = document.querySelector('#container');
+var msnry = new Masonry( container, {
+  itemSelector: '.item',
+
+});
+</script>-->
+
+
+</body>
+</html>
+

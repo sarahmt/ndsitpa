@@ -1,0 +1,452 @@
+{% extends "base.html" %}
+
+{% block title %}
+NeuroDining
+{% endblock %}
+
+{% block body %}
+
+
+
+{# touch home page #}
+
+{# empty banner as place holder #}
+
+<strong class="show-for-touch">
+    <div class="row collapse">
+        <div class="banner-touch-invisible">
+
+        </div>
+    </div>
+</strong>
+
+
+<strong class="show-for-small-only">
+<div class="touchgrid">
+    <!--About-->
+        <div class="large-12 medium-12 small-12 columns nopadding">
+                <div class="cap">
+                    <a class="active" href="/about">
+                        <span class="screentouch">
+                        <span class="insidetouch">
+                            <p>
+                                <font color=white size=6w weight=normal face=Georgia>
+                                About
+                                </font>
+                            </p>
+                        </span>
+                </span>
+            <img src="{{ url_for('static', filename='img/88(small).jpg', _external=True) }}" /></a>
+        </div>
+    </div>
+    <!-- Service -->
+        <div class="large-12 medium-12 small-12 columns nopadding">
+            <div class="cap">
+                <a class="active" href="/service">
+                    <span class="screentouchright">
+                        <span class="insidetouch">
+                            <p align="right">
+                               <font color=white size=6w weight=normal face=Georgia>
+                                E-Concierge
+                                </font>
+                            </p>
+                            </span>
+                            </span>
+            <img src="{{ url_for('static', filename='img/566.small.jpg', _external=True) }}" /></a>
+    </div>
+    </div>
+    <!--Our Restaurants -->
+        <div class="large-12 medium-12 small-12 columns nopadding">
+            <div class="cap">
+            <a class="active" href="/news">
+                <span class="screentouch">
+                        <span class="insidetouch">
+                            <p>
+                               <font color=white size=6w weight=normal face=Georgia>
+                                Restaurants
+                                </font>
+                            </p>
+                            </span>
+                            </span>
+            <img src="{{ url_for('static', filename='img/19(small).jpg', _external=True) }}" /></a>
+    </div>
+    </div>
+    <!--Community-->
+        <div class="large-12 medium-12 small-12 columns nopadding">
+            <div class="cap">
+            <a class="active" href="/community">
+                <span class="screentouchright">
+                        <span class="insidetouch">
+                            <p align="right">
+                               <font color=white size=6w weight=normal face=Georgia>
+                                Community
+                                </font>
+                            </p>
+                            </span>
+                            </span>
+            <img src="{{ url_for('static', filename='img/4(small).jpg', _external=True) }}" /></a>
+    </div>
+    </div>
+    <!-- Contact Us -->
+        <div class="large-12 medium-12 small-12 columns nopadding">
+            <div class="cap">
+            <a class="active" href="/contact">
+                <span class="screentouch">
+                        <span class="insidetouch">
+                            <p>
+                               <font color=white size=6w weight=normal face=Georgia>
+                                Membership
+                                </font>
+                            </p>
+                            </span>
+                            </span>
+            <img src="{{ url_for('static', filename='img/55(small).jpg', _external=True) }}" /></a>
+        </div>
+</div>
+    <!-- App Download -->
+        <div class="large-12 medium-12 small-12 columns nopadding">
+            <div class="cap">
+            <a class="active">
+                <span class="screentouchright">
+                        <span class="insidetouch">
+                            <p align="right">
+                               <font color=white size=6w weight=normal face=Georgia>
+                                App Download
+                                </font>
+                            </p>
+                            </span>
+                            </span>
+            <img src="{{ url_for('static', filename='img/100(small).jpg', _external=True) }}" /></a>
+    </div>
+    </div>
+
+</div>
+</strong>
+
+
+
+
+
+
+<!--<strong class="hide-for-touch">-->
+<strong class="show-for-large-up">
+{# grid of pictures #}
+<div class="mygrid">
+  <div class="row collapse">
+    {# left half of grid #}
+    <div class="large-7 small-12 columns medium-6 columns">
+      <div class = "row collapse">
+        <div class = "large-12 small-12 columns medium-12 columns">
+
+          <div class="panel">
+              <div class="cap">
+               <a class="active" href="/about">
+                   <!--<strong class="hide-for-touch">-->
+                   <span class="screen fade-in">
+        <span class="inside">
+        <p class="title">
+          About NeuroDining
+        </p>
+        <p3>
+         We provide a new way for the experienced palate to explore New York City’s finest restaurants.
+        </p3>
+        </span>
+      </span>
+      <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/8(resized).png', _external=True) }}" />
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row collapse">
+
+
+        <div class="large-4 small-12 columns medium- columns">
+          <div class="panel">
+              <div class="cap">
+                <!--<strong class="hide-for-touch">-->
+                <!--<a class="active" href="/contact">-->
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen2 fade-in">
+                        <span class="inside">
+
+                            <p class="title">
+                                <!--<img src="{{ url_for('static', filename='img/app-store.png', _external=True) }}" />-->
+                            </p>
+
+                        </span>
+                    </span>
+                    <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/100(resized).jpg', _external=True) }}" style="width:100%"/><!--</a>-->
+				    <!--</strong>-->
+			</div>
+          </div>
+        </div>
+
+
+        <div class="large-8 small-12 columns medium-12 columns">
+          <div class="panel">
+              <div class="cap">
+                <a class="active" href="/contact" >
+                    <!--<strong class="hide-for-touch">-->
+                    <span class="screen fade-in">
+                        <span class="inside">
+                            <p class="title">
+                                Request Membership
+                            </p>
+                            <p3>
+                               We will do our best to personally respond to each message.
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+               <img src="{{ url_for('static', filename='img/55(resized).jpg', _external=True) }}" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    {# right half of grid #}
+    <div class="large-5 small-12 columns medium-6 columns">
+      <div class = "row collapse">
+        <div class = "large-6 small-12 columns medium-12 columns">
+          <div class="panel">
+            <div class="cap">
+              <a class="active" href="/service">
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen fade-in">
+                        <span class="inside">
+                            <p>
+                                E-Concierge
+                            </p>
+                            <p3>
+                                Users are guaranteed last minute reservations at the most exclusive restaurants in New York City.
+
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/33(resized).jpg', _external=True) }}" /></a>
+              </div>
+            </div>
+        </div>
+
+        <div class = "large-6 small-12 columns medium-12 columns">
+          <div class="panel">
+            <div class="cap">
+              <a class="active" href="/news">
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen fade-in">
+                        <span class="inside">
+                            <p>
+                                Our Restaurants
+                            </p>
+                            <p3>
+                                We live by our list of carefully selected establishments.
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/19(resized).png', _external=True) }}" /></a>
+              </div>
+            </div>
+          </div>
+
+
+      <div class = "row collapse">
+        <div class = "large-12 small-12 columns medium-12 columns">
+          <div class = "panel">
+              <div class="cap">
+              <a class="active" href="/community">
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen fade-in">
+                        <span class="inside">
+                            <p class="title">
+                                Community
+                            </p>
+                            <p3>
+                                As a NeuroDiner, you will be part of an elegant ecosystem where both diners and restaurants support each other.
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+                    <img src="{{ url_for('static', filename='img/4(resized).png', _external=True) }}" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+</div>
+<!--</strong>-->
+</strong>
+
+<strong class="hide-for-large-up">
+<strong class="hide-for-small">
+<strong class="show-for-middle-only">
+{# grid of pictures #}
+<div class="mygrid">
+  <div class="row collapse">
+    {# left half of grid #}
+    <div class="large-7 small-12 columns medium-6 columns">
+      <div class = "row collapse">
+        <div class = "large-12 small-12 columns medium-12 columns">
+
+          <div class="panel">
+              <div class="cap">
+               <a class="active" href="/about">
+                   <!--<strong class="hide-for-touch">-->
+                   <span class="screen fade-in">
+        <span class="inside">
+        <p class="title" style="font-size:110%">
+          About NeuroDining
+        </p>
+        <p3 style="font-size:80%">
+         We provide a new way for the experienced palate to explore New York City’s finest restaurants.
+        </p3>
+        </span>
+      </span>
+      <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/8(resized).png', _external=True) }}" />
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row collapse">
+        <div class="large-8 small-12 columns medium-12 columns">
+          <div class="panel">
+              <div class="cap">
+                <a class="active" href="/contact" >
+                    <!--<strong class="hide-for-touch">-->
+                    <span class="screen fade-in">
+                        <span class="inside">
+                            <p class="title" style="font-size:110%">
+                                Request Membership
+                            </p>
+                            <p3 style="font-size:80%">
+                               We will do our best to personally respond to each message.
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+               <img src="{{ url_for('static', filename='img/55(resized).jpg', _external=True) }}"/> </a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row collapse">
+
+
+        <div class="large-4 small-12 columns medium-12 columns">
+          <div class="panel">
+              <div class="cap">
+                <!--<strong class="hide-for-touch">-->
+                <!--<a class="active" href="/contact">-->
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen2 fade-in">
+                        <span class="inside">
+
+                            <p class="title">
+                                <!--<img src="{{ url_for('static', filename='img/app-store.png', _external=True) }}" />-->
+                            </p>
+
+                        </span>
+                    </span>
+                    <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/100(resized).jpg', _external=True) }}" style="width:100%"/><!--</a>-->
+				    <!--</strong>-->
+			</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    {# right half of grid #}
+    <div class="large-5 small-12 columns medium-6 columns">
+      <div class = "row collapse">
+        <div class = "large-6 small-12 columns medium-12 columns">
+          <div class="panel">
+            <div class="cap">
+              <a class="active" href="/service">
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen fade-in">
+                        <span class="inside">
+                            <p class="title" style="font-size:110%">
+                                E-Concierge
+                            </p>
+                            <p3 style="font-size:80%">
+                                Users are guaranteed last minute reservations at the most exclusive restaurants in New York City.
+
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/33(resized).jpg', _external=True) }}" /></a>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class = "row collapse">
+        <div class = "large-6 small-12 columns medium-12 columns">
+          <div class="panel">
+            <div class="cap">
+              <a class="active" href="/news">
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen fade-in">
+                        <span class="inside">
+                            <p class="title" style="font-size:110%">
+                                Our Restaurants
+                            </p>
+                            <p3 style="font-size:80%">
+                                We live by our list of carefully selected establishments.
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+              <img src="{{ url_for('static', filename='img/19(resized).png', _external=True) }}" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class = "row collapse">
+        <div class = "large-12 small-12 columns medium-12 columns">
+          <div class = "panel">
+              <div class="cap">
+              <a class="active" href="/community">
+                  <!--<strong class="hide-for-touch">-->
+                  <span class="screen fade-in">
+                        <span class="inside">
+                            <p class="title" style="font-size:110%">
+                                Community
+                            </p>
+                            <p3 style="font-size:80%">
+                                As a NeuroDiner, you will be part of an elegant ecosystem where both diners and restaurants support each other.
+                            </p3>
+                        </span>
+                    </span>
+                    <!--</strong>-->
+                    <img src="{{ url_for('static', filename='img/4(resized).png', _external=True) }}"/> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!--</strong>-->
+</strong>
+</strong>
+</strong>
+
+    {% endblock %}

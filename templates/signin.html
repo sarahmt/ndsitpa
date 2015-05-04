@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+Sign In
+{% endblock %}
+
+{% block body %}
+
+<div class="row">
+
+	<div class="large-2 column">
+		<p></p>
+	</div>
+
+	<div class="large-8 column">
+	<h1>Sign In</h1>
+	<form action="Authenticate" method="post">
+		<input type="text" placeholder="username" name="customers_firstname" required/>
+		<input type="text" placeholder="Password" name="pass_raw" required/>
+		<button type="submit">Submit</button>
+	</form>
+</div>
+
+<div class="large-2 column">
+		<p></p>
+	</div>
+
+</div>
+
+{% endblock %}

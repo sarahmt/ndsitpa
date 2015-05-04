@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+
+{% block title %}
+E-Concierge
+{% endblock %}
+
+{% block body %}
+
+    {# BANNER #}
+
+    <strong class="show-for-small">
+    <div class="row collapse">
+        <div class="banner-touch">
+        <img src="{{ url_for('static', filename='img/saikai.jpg', _external=True) }}"/>
+        </div>
+    </div>
+    </strong>
+
+    <strong class="hide-for-large-up">
+    <strong class="hide-for-small">
+    <strong class="show-for-middle-only">
+    <div class="row collapse">
+            <div class="banner">
+            <img src="{{ url_for('static', filename='img/saikai.jpg', _external=True) }}"style="width:100%; margin-top:2rem"/>
+            </div>
+    </div>
+    </strong>
+    </strong>
+    </strong>
+
+    <strong class="show-for-large-up">
+    <div class="row collapse">
+        <div class="banner">
+        <img src="{{ url_for('static', filename='img/saikai.jpg', _external=True) }}" style="width:100%; margin-top:-4rem"/>
+        </div>
+    </div>
+    </strong>
+
+{# text #}
+
+<div class="hide-for-small">
+<div class="subpagephoto">
+<div class = "row">
+<div class="large-1 columns">
+<p></p>
+</div>
+  <div class = "large-10 columns">
+
+<div class="row collapse">
+<div class="subpageheading">
+<h1>
+      <span class="subpagetext" style="color:#E9E0DB">
+      E-Concierge
+      </span>
+    </h1>
+    </div>
+</div>
+<div class="paragraph">
+<div class="row collapse">
+    <div class="large-12 columns">
+    <p>
+      <span class="subpagetextp">
+<font color=#2C2C2C>__</font>Using our e-concierge, NeuroDiners can access pre-reserved tables at Manhattan’s finest restaurants in seconds. The iOS app narrows dining choices down to the two best options, eliminating decisions and maximizing efficiency. Users are guaranteed last minute reservations at the most exclusive restaurants in New York City. Our specialized decision engine learns from user feedback to generate dining suggestions that reflect individual preferences.  E-concierge is a convenient way to bypass the messy details of dining in Manhattan and most of all, a way to ensure a positive experience for yourself and fellow diners.
+</span>
+</p>
+<div class = "download">
+    <img src="{{ url_for('static', filename='img/app-storesmall.png', _external=True) }}" />
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+  <div class="large-1 columns">
+  <p></p>
+</div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="show-for-small">
+    <div class="row">
+        <br>
+        <div class="row">
+            <div class ="large-12 medium-12 small-12 columns">
+                <div class="subpageheading">
+                    <h1>
+                    <span class="subpagetext" style="color:#E9E0DB">
+                    E-Concierge
+                    </span>
+                    </h1>
+                </div>
+
+                <div class="paragraph">
+                    <p>
+                    <span class="subpagetextp">
+                    <font color=#2C2C2C>__</font>Using our e-concierge, NeuroDiners can access pre-reserved tables at Manhattan’s finest restaurants in seconds. The iOS app narrows dining choices down to the two best options, eliminating decisions and maximizing efficiency. Users are guaranteed last minute reservations at the most exclusive restaurants in New York City. Our specialized decision engine learns from user feedback to generate dining suggestions that reflect individual preferences.  E-concierge is a convenient way to bypass the messy details of dining in Manhattan and most of all, a way to ensure a positive experience for yourself and fellow diners.
+                    </span>
+                    </p>
+                </div>
+<div class = "download">
+    <img src="{{ url_for('static', filename='img/app-storesmall.png', _external=True) }}" />
+</div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+<!-- SLICK -->
+<strong class="hide-for-small">
+<div class="slick">
+<div class="row">
+<div class="large-3 columns"><p></p></div>
+<div class="large-6 columns">
+<div class="row text-center slick2-multislider">
+        <div class="large-4 small-12 columns">
+
+
+          <div class="title-blue-line-content"></div>
+          <div class="scontain2">
+
+            <h5 class="h5-title-margin-top">Choose your desired neighborhood.</h5>
+            <p></p><p></p>
+
+            <p><font color=#2C2C2C>__</font></p><p><font color=#2C2C2C>__</font></p>
+        </div>
+        </div>
+        <div class="large-4 small-12 columns">
+
+
+          <div class="title-blue-line-content"></div>
+          <div class="scontain">
+
+            <h5 class="h5-title-margin-top">Receive two reserved tables at curated restaurants</h5>
+            <p></p><p></p>
+
+            <p><font color=#2C2C2C>__</font></p><p><font color=#2C2C2C>__</font></p>
+        </div>
+        </div>
+        <div class="large-4 small-12 columns">
+
+
+          <div class="title-blue-line-content"></div>
+          <div class="scontain2">
+
+            <h5 class="h5-title-margin-top">Easily notify your fellow diners.</h5>
+            <p></p><p></p>
+
+            <p><font color=#2C2C2C>__</font></p><p><font color=#2C2C2C>__</font></p>
+        </div>
+        </div>
+        <div class="large-4 small-12 columns">
+
+
+          <div class="title-blue-line-content"></div>
+          <div class="scontain">
+
+            <h5 class="h5-title-margin-top">Give feedback to tailor your future dining selections.</h5>
+            <p></p><p></p>
+
+            <p><font color=#2C2C2C>__</font></p><p><font color=#2C2C2C>__</font></p>
+        </div>
+        </div>
+        <div class="large-4 small-12 columns">
+
+
+          <div class="title-blue-line-content"></div>
+          <div class="scontain2">
+
+            <h5 class="h5-title-margin-top">Track personal dining history.</h5>
+            <p></p><p></p>
+
+            <p><font color=#2C2C2C>__</font></p><p><font color=#2C2C2C>__</font></p>
+        </div>
+        </div>
+        <div class="large-4 small-12 columns">
+
+
+          <div class="title-blue-line-content"></div>
+          <div class="scontain2">
+
+            <h5 class="h5-title-margin-top">Easily re-book preferred restaurants.</h5>
+            <p></p><p></p>
+
+            <p><font color=#2C2C2C>__</font></p><p><font color=#2C2C2C>__</font></p>
+        </div>
+        </div>
+</div>
+</div>
+<div class="large-3 columns"><p></p></div>
+</div>
+</div>
+</div>
+</div>
+</strong>
+
+
+    {% endblock %}

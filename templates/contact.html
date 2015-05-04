@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block body %}
+
+{# empty banner as place holder #}
+<strong class="show-for-small">
+    <div class="row collapse">
+        <div class="banner-touch-invisible">
+
+        </div>
+    </div>
+</strong>
+
+{# text #}
+<div class="subpagephoto">
+<div class = "row">
+    <div class="large-1 columns">
+        <p></p>
+    </div>
+    <div class = "large-10 columns">
+        <p></p>
+    <div class="row collapse">
+        <div class="subpageheading">
+            <h1>
+            <span class="subpagetext" style="color:#E9E0DB">
+            Request Membership
+            </span>
+            </h1>
+        </div>
+        </div>
+
+    {# contact form #}
+
+    {% if success %}
+    <p><span class="subpagetextp">Thank you for reaching out to us. We'll get back to you shortly.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></span></p>
+    {% else %}
+    <p>
+    <span class="subpagetextp">
+    NeuroDining membership is currently invitation only. Please submit your contact info and we will get back to you shortly.
+    </span>
+    </p>
+      {% for message in form.name.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      {% for message in form.email.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      {% for message in form.phone.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      {% for message in form.message.errors %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      <form action="{{ url_for('contact') }}" method=post>
+        {{ form.hidden_tag() }}
+        {{ form.name.label }}
+        {{ form.name }}
+        {{ form.email.label }}
+        {{ form.email }}
+        {{ form.phone.label }}
+        {{ form.phone }}
+        {{ form.message.label }}
+        {{ form.message }}
+        <br>
+        {{ form.submit }}
+
+      </form>
+    {% endif %}
+  </div>
+  <div class="large-1 columns">
+        <p></p>
+    </div>
+</div>
+  </div>
+</div>
+</div>
+
+
+    {% endblock %}

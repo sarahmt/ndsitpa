@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block body %}
+
+<div class="row collapse">
+        <div class="banner">
+        <img src="{{ url_for('static', filename='img/banner.jpg', _external=True) }}" />
+        </div>
+</div>
+
+{# text #}
+<!--<div class="row">
+    <div class="banner">
+    <img src="{{ url_for('static', filename='img/banner.jpg', _external=True) }}" />
+</div>
+</div>-->
+<div class="subpagephoto">
+<div class = "row">
+<div class="large-1 columns">
+<p></p>
+</div>
+  <div class = "large-10 columns">
+
+<div class="row collapse">
+<div class="subpageheading">
+<h1>
+      <span class="subpagetext" style="color:#E9E0DB">
+      Our Story
+      </span>
+    </h1>
+    </div>
+</div>
+<div class="row collapse">
+    <div class="large-6 columns">
+    <p>
+      <span class="subpagetextp">
+<font color=#2C2C2C>__</font>As a former banker and corporate executive, the founders of NeuroDining have firsthand experience with the frustrations of fine dining for busy professionals.  From endless web pages with unreliable ratings to an ever changing landscape of eateries, searching for an exquisite meal is time consuming and risky.  Frustrated by these obstacles and armed with adventurous taste buds, they set out to map the high end restaurants of New York City.  Many delicious meals later, Neuroding was born.
+
+</p>
+</div>
+
+<div class="large-6 columns">
+    <div class="subpagetextp2">
+<p>
+      <span class="subpagetextp">
+<font color=#2C2C2C>__</font>The founders now constantly work to maintain a list of restaurants that is carefully curated through extensive research and personal experience.  They have dined at more than 400 restaurants in New York City alone, taking attentive notes (and enjoying a glass of wine here and there).
+
+But NYC is just the beginning. Both of NeuroDining’s founders have travelled to, lived and dined in many cities around the world. They plan to utilize these experiences in the expansion of NeuroDining to encompass a global community of like-minded epicureans.
+
+  </span>
+    </p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <div class="large-1 columns">
+  <p></p>
+</div>
+  </div>
+</div>
+
+</div>
+
+
+    {% endblock %}
