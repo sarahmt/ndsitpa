@@ -72,7 +72,7 @@ img:hover {
 }
 
 .touchlogo {
-    padding: 18px 0px 0px 21px;
+    padding: 18px 0px 0px 10px;
 }
 
 .touchfooter {
@@ -1159,7 +1159,8 @@ form input#submit:hover{
   position: absolute;
   top: 48px;
   right: 0;
-  width: 150px;
+  width: 100%;
+  margin-top:1.2rem;
 }
 
 #menu-toggle-primary a.close-menu-primary{
@@ -1174,10 +1175,12 @@ form input#submit:hover{
 /* Hide Open Toggle Link */
 #menu-primary:target #menu-toggle-primary a.open-menu-primary{
     display: none;
+
 }
 /* Show Close Toggle Link */
 #menu-primary:target #menu-toggle-primary a.close-menu-primary{
     display: block;
+
 }
 
 #menu-primary:target #menu-primary-items li{
@@ -1185,21 +1188,28 @@ form input#submit:hover{
     display: block;
     color: white;
     text-shadow: 0 -1px 0 #000;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    padding: 20px 25px 10px;
-    font-size: 13px;
+    /*font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: Arial, Georgia, serif*/
+    font-family: Cambria, Georgia, serif;
+    padding: 20px 25px 20px;
+    font-size: 20px;
+    text-align:center;
 }
 
 #menu-primary{
     position: fixed;
-    z-index: 3000;
+    z-index: 100;
     right: 0px;
     top: 0px;
     color: white;
     padding: 15px 20px;
     background: #1A1A1A;
-    opacity: 0.9;
+    opacity: 0.97;
+    width:100%;
+    margin-top:-0.6rem;
 }
+
+
 /*
 .menu {
     position: fixed;

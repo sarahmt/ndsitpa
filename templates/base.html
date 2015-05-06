@@ -45,12 +45,17 @@
         <nav id="menu-primary">
             <div class="menu-container">
                 <div id="menu-toggle-primary">
-                    <a class="open-menu-primary" href="#menu-primary"><span><img src="{{ url_for('static', filename='img/menu-icon.png', _external=True) }}" height="13" width="26" style="PADDING-TOP:3.5px"/></span></a>
-                    <a class="close-menu-primary" href="#"><span><img src="{{ url_for('static', filename='img/close-icon.png', _external=True) }}" height="13" width="26" style="PADDING-TOP:3.5px"/></span></a>
+                    <a href="/">
+                        <div class = "touchlogo">
+                          <img src="{{ url_for('static', filename='img/logo.png', _external=True) }}" height="30" width="60" align="left" class="clearfix"/>
+                        </div>
+                      </a>
+                    <a class="open-menu-primary" href="#menu-primary"><span><img src="{{ url_for('static', filename='img/menu-icon.png', _external=True) }}" height="13" width="26" style="PADDING-TOP:2px" align="right"/></span></a>
+                    <a class="close-menu-primary" href="#"><span><img src="{{ url_for('static', filename='img/close-icon.png', _external=True) }}" height="13" width="26" style="PADDING-TOP:2px" align="right"/></span></a>
                 </div><!-- .menu-toggle -->
                 <div class="wrap">
                     <ul class="menu-items" id="menu-primary-items">
-                        <a href="/about"><li>About</li></a>
+                          <a href="/about"><li>About</li></a>
                           <a href="/service"><li>E-Concierge</li></a>
                           <a href="/news"><li>Restaurants</li></a>
                           <a href="/community"><li>Community</li></a>
@@ -108,7 +113,7 @@
 
     {# touch top bar #}
 
-   <strong class="show-for-small">
+<!--   <strong class="show-for-small">
     <div class = "fixed">
     <div class="row">
       <div class="barbox">
@@ -129,7 +134,7 @@
         </div>
         </div>
         </div>
-        </strong>
+        </strong>-->
 
 
 
